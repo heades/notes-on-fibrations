@@ -1,0 +1,53 @@
+\documentclass{article}
+
+\usepackage{amssymb,amsmath,mathtools,amsthm}
+\usepackage{cmll}
+\usepackage{stmaryrd}
+\usepackage{mathpartir}
+\usepackage{supertabular}
+\usepackage{color}
+\usepackage{fullpage}
+\usepackage{verbatim}
+\usepackage[textwidth=2cm]{todonotes}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{mnsymbol}
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+      \setlength{\topsep}{0pt}%
+      \setlength{\leftmargin}{#1}%
+      \setlength{\rightmargin}{#2}%
+      \setlength{\listparindent}{\parindent}%
+      \setlength{\itemindent}{\parindent}%
+      \setlength{\parsep}{\parskip}%
+    }%
+  \item[]}{\end{list}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+
+\begin{document}
+
+\title{Notes on Fibrational Semantics of Simple, Polymorphic, and Dependent Type Theory}
+\author{Harley Eades III}
+\maketitle
+
+\section{The Simple Fibration}
+\label{sec:the_simple_fibration}
+\input{simple}
+% section the_simple_fibration (end)
+
+
+\appendix
+
+\input{appendix}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
