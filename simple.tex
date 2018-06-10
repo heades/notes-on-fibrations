@@ -59,7 +59,29 @@ concatenation is defined as $(\Gamma,\Delta) = (\Gamma \times
   ([t_1/y_1]\cdots[t_i/y_i]t'_1,\ldots,[t_1/y_1]\cdots[t_i/y_i]t'_j):
   \Gamma \mto \Phi$.
 
-  \ \\ \textbf{(Composition respects identities.)}. Suppose $\Gamma$
-  and $\Delta = y_1:T_1,\ldots,y_i:T_i$ are contexts, and $f =
-  (t_1,\ldots,t_i) : \Gamma \mto \Delta$ is a morphism.
+  \ \\ \textbf{(Composition respects identities.)}. Suppose $\Gamma =
+  x_1:T_1,\ldots,x_i:T_i$ and $\Delta = y_1:T_1,\ldots,y_j:T_j$ are
+  contexts, and $f = (t_1,\ldots,t_j) : \Gamma \mto \Delta$ is a
+  morphism.  Then:
+  \begin{center}
+    \begin{math}
+      \begin{array}{lll}
+        id_{\Gamma};f
+        & = & ([x_1/x_1]\cdots[x_i/x_i]t_1,\ldots,[x_1/x_1]\cdots[x_i/x_i]t_j)\\
+        & = & (t_1,\ldots,t_j)\\
+        & = & f\\
+      \end{array}
+    \end{math}
+  \end{center}
+  and
+  \begin{center}
+    \begin{math}
+      \begin{array}{lll}
+        f;id_{\Delta}
+        & = & ([t_1/y_1]\cdots[t_j/y_j]y_1,\ldots,[t_1/y_1]\cdots[t_j/y_j]y_j)\\
+        & = & (t_1,\ldots,t_j)\\
+        & = & f\\
+      \end{array}
+    \end{math}
+  \end{center}
 \end{proof}
